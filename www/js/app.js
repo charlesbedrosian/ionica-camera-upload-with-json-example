@@ -23,9 +23,33 @@ angular.module('starter', ['ionic', 'starter.services'])
 .controller('MainCtrl', function($scope, Camera) {
 
   $scope.getPhoto = function() {
-    Camera.getPicture().then(function(imageURI) {
-      console.log(imageURI);
-      $scope.lastPhoto = imageURI;
+    Camera.getPicture().then(function(fileURI) {
+
+      var json = {
+
+          toOnDate : "2014-12-23",
+          amount : 18484.20,
+          Comments : "this is a test",
+          fields : []
+          };
+
+
+      var options = new FileUploadOptions();
+      options.fileKey = "receipt";
+      options.fileName = fileURI.substr(fileURI.lastIndexOf('/') + 1);
+      options.mimeType = "image/jpeg";
+      options.params = json;
+      var ft = new FileTransfer();
+      console.log("Uploading...");
+      ft.upload(fileURI, encodeURI("http://posttestserver.com/post.php?dump"),
+          function(a) {
+            console.log("uplaod success!");
+            console.log(a.response);
+          },
+          function() {
+            console.log("An error happened!");
+          }, options);
+
     }, function(err) {
       console.err(err);
     }, {

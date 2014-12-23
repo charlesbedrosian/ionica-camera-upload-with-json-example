@@ -217,3 +217,22 @@ objc[68544]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.a
 2014-05-14 21:24:29.739 CameraTest[68544:70b] [CDVTimer][TotalPluginStartup] 1.332998ms
 2014-05-14 21:24:29.869 CameraTest[68544:70b] Resetting plugins due to page load.
 2014-05-14 21:24:30.095 CameraTest[68544:70b] Finished load of: file:///Users/driftyadmin/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01E1B564-2D26-41C7-B495-76141877B4E8/CameraTest.app/www/index.html#/tab/dash
+2014-12-23 13:59:40.514 CameraTest[51182:376379] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/charles/Library/Developer/CoreSimulator/Devices/9D1B80ED-1E2A-4897-91D0-630906311914/data/Containers/Data/Application/8FBDA778-71DA-4587-8CD7-84CC66CFA449/Library/Cookies/Cookies.binarycookies
+2014-12-23 13:59:40.682 CameraTest[51182:376379] Multi-tasking -> Device: YES, App: YES
+2014-12-23 13:59:40.695 CameraTest[51182:376379] Unlimited access to network resources
+2014-12-23 13:59:42.418 CameraTest[51182:376379] Resetting plugins due to page load.
+2014-12-23 13:59:42.758 CameraTest[51182:376379] Finished load of: file:///Users/charles/Library/Developer/CoreSimulator/Devices/9D1B80ED-1E2A-4897-91D0-630906311914/data/Containers/Bundle/Application/2A227DD3-6E3F-4B43-A249-4638F227ACB0/CameraTest.app/www/index.html
+2014-12-23 13:59:55.267 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
+2014-12-23 13:59:56.165 CameraTest[51182:376379] ACTIVATING
+2014-12-23 13:59:56.227 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
+2014-12-23 13:59:58.605 CameraTest[51182:376379] ACTIVATING
+2014-12-23 13:59:58.649 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
+2014-12-23 13:59:59.046 CameraTest[51182:376379] ACTIVATING
+2014-12-23 13:59:59.085 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
+2014-12-23 13:59:59.263 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
+2014-12-23 13:59:59.441 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
+2014-12-23 13:59:59.628 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
+2014-12-23 13:59:59.864 CameraTest[51182:376379] ACTIVATING
+2014-12-23 13:59:59.897 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
+2014-12-23 14:00:00.264 CameraTest[51182:376379] ACTIVATING
+2014-12-23 14:00:00.355 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
