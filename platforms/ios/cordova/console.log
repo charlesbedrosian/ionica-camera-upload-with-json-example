@@ -236,3 +236,17 @@ objc[68544]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.a
 2014-12-23 13:59:59.897 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
 2014-12-23 14:00:00.264 CameraTest[51182:376379] ACTIVATING
 2014-12-23 14:00:00.355 CameraTest[51182:376379] Camera.getPicture: source type 1 not available.
+2014-12-26 14:04:36.524 CameraTest[8244:725811] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/charles/Library/Developer/CoreSimulator/Devices/9D1B80ED-1E2A-4897-91D0-630906311914/data/Containers/Data/Application/2B8DAC91-EB11-4F15-AF0D-65C1192B6C89/Library/Cookies/Cookies.binarycookies
+2014-12-26 14:04:36.606 CameraTest[8244:725811] Multi-tasking -> Device: YES, App: YES
+2014-12-26 14:04:36.628 CameraTest[8244:725811] Unlimited access to network resources
+2014-12-26 14:04:37.126 CameraTest[8244:725811] [CDVTimer][file] 3.027976ms
+2014-12-26 14:04:37.126 CameraTest[8244:725811] [CDVTimer][TotalPluginStartup] 3.208995ms
+2014-12-26 14:04:37.268 CameraTest[8244:725811] Resetting plugins due to page load.
+2014-12-26 14:04:37.541 CameraTest[8244:725811] Finished load of: file:///Users/charles/Library/Developer/CoreSimulator/Devices/9D1B80ED-1E2A-4897-91D0-630906311914/data/Containers/Bundle/Application/7C612B7E-642D-454D-8B63-B35E98A1FEDC/CameraTest.app/www/index.html
+2014-12-26 14:05:36.915 CameraTest[8723:740736] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/charles/Library/Developer/CoreSimulator/Devices/9D1B80ED-1E2A-4897-91D0-630906311914/data/Containers/Data/Application/F672C2D7-60B7-4826-A5E4-3723834D5241/Library/Cookies/Cookies.binarycookies
+2014-12-26 14:05:37.019 CameraTest[8723:740736] Multi-tasking -> Device: YES, App: YES
+2014-12-26 14:05:37.024 CameraTest[8723:740736] Unlimited access to network resources
+2014-12-26 14:05:37.237 CameraTest[8723:740736] [CDVTimer][file] 1.981020ms
+2014-12-26 14:05:37.237 CameraTest[8723:740736] [CDVTimer][TotalPluginStartup] 2.131045ms
+2014-12-26 14:05:37.276 CameraTest[8723:740736] Resetting plugins due to page load.
+2014-12-26 14:05:37.445 CameraTest[8723:740736] Finished load of: file:///Users/charles/Library/Developer/CoreSimulator/Devices/9D1B80ED-1E2A-4897-91D0-630906311914/data/Containers/Bundle/Application/F6A3B4A2-59FD-44D9-8BD1-1A6BE764AEC0/CameraTest.app/www/index.html

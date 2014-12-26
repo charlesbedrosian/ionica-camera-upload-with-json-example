@@ -26,19 +26,15 @@ angular.module('starter', ['ionic', 'starter.services'])
     Camera.getPicture().then(function(fileURI) {
 
       var json = {
-
-          toOnDate : "2014-12-23",
-          amount : 18484.20,
-          Comments : "this is a test",
-          fields : []
+      expense : "{ toOnDate : \"2014-12-23\", amount : 18484.20, comments : \"this is a test\",fields : [] }"
           };
-
 
       var options = new FileUploadOptions();
       options.fileKey = "receipt";
       options.fileName = fileURI.substr(fileURI.lastIndexOf('/') + 1);
       options.mimeType = "image/jpeg";
       options.params = json;
+      
       var ft = new FileTransfer();
       console.log("Uploading...");
       ft.upload(fileURI, encodeURI("http://posttestserver.com/post.php?dump"),
