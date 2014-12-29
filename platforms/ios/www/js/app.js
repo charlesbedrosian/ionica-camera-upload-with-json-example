@@ -22,13 +22,26 @@ angular.module('starter', ['ionic', 'starter.services'])
 
 .controller('MainCtrl', function($scope, Camera) {
 
-  $scope.getPhoto = function() {
-    Camera.getPicture().then(function(fileURI) {
+  $scope.processOne = function(fileURI) {
+  		console.log(fileURI);
+      // build JSON from model fields (simulated)
+      var toOnDate = "2014-12-23";
+      var amount = 18484.20;
+      var comments = "this is a test";
+      var expenseTypeCode = "EX01";
+      var projectCode = "AAA";
 
       var json = {
-      expense : "{ toOnDate : \"2014-12-23\", amount : 18484.20, comments : \"this is a test\",fields : [] }"
+      expense : "{ " +
+          "toOnDate: \"" + toOnDate + "\", " +
+          "amount: " + amount + ", " +
+          "comments: \"" + escape(comments) + "\", " + 
+          "expenseTypeCode: \"" + expenseTypeCode + "\", " +
+          "projectCode: \"" + projectCode + "\", " +
+          "fields: []" +
+          "}"
           };
-
+      
       var options = new FileUploadOptions();
       options.fileKey = "receipt";
       options.fileName = fileURI.substr(fileURI.lastIndexOf('/') + 1);
@@ -37,15 +50,23 @@ angular.module('starter', ['ionic', 'starter.services'])
       
       var ft = new FileTransfer();
       console.log("Uploading...");
-      ft.upload(fileURI, encodeURI("http://posttestserver.com/post.php?dump"),
+      // var url = "http://posttestserver.com/post.php?dump";
+      var url = "http://192.168.1.120:4644/employees/robert.b.cool/saveexpense";
+      ft.upload(fileURI, encodeURI(url),
           function(a) {
             console.log("uplaod success!");
             console.log(a.response);
           },
-          function() {
-            console.log("An error happened!");
+          function(a) {
+            console.log("An error happened during upload");
+            console.log(a);
           }, options);
 
+  };  
+  
+  $scope.getPhoto = function() {
+    Camera.getPicture().then(function(fileURI) {
+		$scope.processOne(fileURI);
     }, function(err) {
       console.err(err);
     }, {
